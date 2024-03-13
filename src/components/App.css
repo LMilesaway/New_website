@@ -1,0 +1,56 @@
+.burger-menu {
+  position: relative;
+}
+
+.burger-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.open.line1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.open.line2 {
+  opacity: 0;
+}
+
+.open.line3 {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 50px; /* Adjust this value to position the menu vertically */
+  left: 10px; /* Position the menu on the left */
+  background-color: #f9f9f9;
+}
+
+.dropdown-menu.open {
+  display: block;
+}
+
+.dropdown-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dropdown-menu ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-menu ul li:hover {
+  background-color: #ddd;
+}
