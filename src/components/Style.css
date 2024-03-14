@@ -37,7 +37,8 @@
 .item {
   
   width: 95%;
-  height: 150px;
+  min-height: 150px;
+  padding-bottom: 10px;
   background-color: #c5b8fc;
   font-weight: 700;
   font-size: 62%;
