@@ -25,21 +25,18 @@ const Contentbox = () => {
         </div>
 
     </div>
-    <div className="myFlexedImage">
-
-
-   
-            <img src="/your-image.jpg" alt="Image Description" />
-          
-    </div>
-
-
-
-    <div className="item item-3">
+  
+    <div className="item item-2">
     <h2 className='tittle'><Link to="/home" style={{ textDecoration: 'none' }} >Home</Link></h2>
     <h2 className='tittle'><Link to="/about" style={{ textDecoration: 'none' }}>About</Link></h2>
     <h2 className='tittle'><Link to="/tickets" style={{ textDecoration: 'none' }}>Tickets</Link></h2>
     <h2 className='tittle'><Link to="/getting_there" style={{ textDecoration: 'none' }}>Getting There</Link></h2>
+
+    </div>
+
+    <div className="item item-3">
+    <p>Contact US</p>
+        <p>Email: Somethingmovesfestival@gmail.com</p>
 
     </div>
   </div>
@@ -51,7 +48,13 @@ const Contentbox = () => {
 
 export default  Contentbox;
 
+
+
 /*
+
+<div className="myFlexedImage">
+            <img src="/your-image.jpg" alt="Image Description" />
+    </div>
 
  <div style={{ display: 'flex', backgroundColor: 'Green', width: '100%', minHeight: '340px', justifyContent: 'space-evenly', alignItems: 'center' }}>
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', width: '95%', marginTop: '20px', marginBottom: '20px', alignItems: 'center' }}>
