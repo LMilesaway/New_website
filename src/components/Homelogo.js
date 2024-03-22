@@ -8,8 +8,8 @@ import BurgerMenu from './BurgerMenu';
 
 const Homelogo = () => {
   return (
-    <div style={{ width: '100%', height: '200px', position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' , zIndex: '2' }}>
-    <img src={logo} alt="Description of your image" style={{ width: '75%', height: '75%', objectFit: 'cover', zIndex: '2' }} />
+    <div className="homelogo" style={{ width: '100%', height: '200px', position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' , zIndex: '2' }}>
+    <img className='logoimage' src={logo} alt="Description of your image"/>
   </div>
     );
   }

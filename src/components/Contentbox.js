@@ -34,6 +34,10 @@ const Contentbox = () => {
 
     </div>
 
+  
+
+    
+
     <div className="item item-3">
     <p>Contact US</p>
         <p>Email: Somethingmovesfestival@gmail.com</p>

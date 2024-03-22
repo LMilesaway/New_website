@@ -13,28 +13,43 @@ import Contentbox from './Contentbox';
 
 const Home = () => {
   return (
-    <div style={{ position: 'relative', width: '100%', height: '800px', overflow: 'auto' }}>
-  <img
-    src={background}
-    alt="Description of your image"
-    style={{
-      width: '100%', // Set the width to 50% to keep the left half of the image
-      height: '100%', // Keep the height as 100% to maintain aspect ratio
-      objectFit: 'cover',
-      position: 'fixed', // Make the background image fixed
-      zIndex: '0'// Keep the left half of the image
-    }}
-  />
-  <div style={{ position: 'absolute', top: '0', left: '0', width: '100%', zIndex: '1' }}>
+    <div className="background-image">
+     <div style={{ position: 'absolute', top: '0', left: '0', width: '100%', zIndex: '1' }}>
     <div style={{ width: '100%', height: '40px' }}>
+
       <BurgerMenu />
     </div>
     <Homelogo />
     <Contentbox />
-  </div>
+    </div>
+      
+  
 </div>
 
   );
 }
 
 export default Home;
+
+
+/*
+
+
+<div style={{ position: 'absolute', top: '0', left: '0', width: '100%', zIndex: '1' }}>
+    <div style={{ width: '100%', height: '40px' }}>
+
+
+      <BurgerMenu />
+    </div>
+    <Homelogo />
+    <Contentbox />
+  </div><img 
+        src={background}
+        alt="Description of your image"
+        style={{
+          width: '100%', // Set the width to 50% to keep the left half of the image
+          height: '100%', // Keep the height as 100% to maintain aspect ratio
+          objectFit: 'cover',
+          position: 'fixed', // Make the background image fixed
+          zIndex: '0'// Keep the left half of the image
+        }}*/
