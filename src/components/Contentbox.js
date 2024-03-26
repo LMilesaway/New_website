@@ -15,7 +15,7 @@ const Contentbox = () => {
 
     <div className="container">
     <div className="item item-1">
-        <h2 className='tittle'>Tittle</h2>
+        <h2 className='tittle'>Title</h2>
         <div className='text'>
         <p  >Join us from June 7th to the 9th 2024, to kick the summer off with the very first Something Moves Festival. We are still in the early stages, so this is just for you to get it in your diary nice and early!
 
@@ -25,6 +25,8 @@ const Contentbox = () => {
         </div>
 
     </div>
+
+    
   
     <div className="item item-2">
     <h2 className='tittle'><Link to="/home" style={{ textDecoration: 'none' }} >Home</Link></h2>
@@ -34,13 +36,10 @@ const Contentbox = () => {
 
     </div>
 
-  
-
-    
-
     <div className="item item-3">
     <p>Contact US</p>
-        <p>Email: Somethingmovesfestival@gmail.com</p>
+    <p>Email: Somethingmovesfestival@gmail.com</p>
+    <p>Instagram</p>
 
     </div>
   </div>

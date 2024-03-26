@@ -66,21 +66,25 @@
   background-image: url( './Something _moves_ 2.jpg');
    background-size: cover;
    background-repeat: no-repeat;
-   height: 130vh;
+   height: 140vh;
    margin: 0;
    padding: 0;
    background-attachment: fixed; 
 
 
-  /* Media query for extra-large screens */
-  @media only screen and (min-width: 1200px) {
-    height: 135vh; /* Adjust the height for extra-large screens */
-  }
-  @media only screen and (max-width: 420px) {
-    height: 130vh; /* Adjust the height for extra-large screens */
-  }
+  
+ 
 }
 
+
+/*
+@media only screen and (min-width: 1200px) {
+  height: 135vh; 
+}
+
+@media only screen and (min-width: 1200px) {
+  height: 135vh; /* Adjust the height for extra-large screens 
+}*/
   
  
 
@@ -114,15 +118,14 @@
 }
 
 .item-1{
-  height: 250px;
+  height: 265px;
 
 
 }
 .item-3{
-  height: 60px;
+  height: 45px;
   text-align: center;
-
-
+  font-size: clamp(50%, 15vw, 90%);
 }
 
 .tittle{
@@ -169,10 +172,70 @@ color: #120377;
 .text {
   margin-right: 20px;
   width: 85%;
-  padding-left: 20px; 
-  font-size: 10px
-  
-  
+  padding-left: 40px; 
+  font-size: 18px
   /* Additional styles for the text if needed */
+}
+
+
+
+@media only screen and (max-width: 376px) {
+  .text {
+    margin-right: 20px;
+    width: 85%;
+    padding-left: 20px; 
+    font-size: 12px
+    
+  }
+  .background-image{
+    background-image: url( './Something _moves_ 2.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 170vh;
+     margin: 0;
+     padding: 0;
+     background-attachment: fixed; 
+  }
+  .item-1{
+    height: 300px;
+  }
+}
+
+
+
+@media only screen and (max-width: 501px) {
+  .text {
+    font-size: 15px
+  }
+  .background-image{
+     height: 170vh;
+  }
+  .item-1{
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 601px) {
+  .text {
+    font-size: 15px
+  }
+  .background-image{
+     height: 170vh;
+  }
+  .item-1{
+    height: 320px;
+  }
+}
+
+@media only screen and (max-width: 701px) {
+  .text {
+    font-size: 16px
+  }
+  .background-image{
+     height: 170vh;
+  }
+  .item-1{
+    height: 320px;
+  }
 }
 
