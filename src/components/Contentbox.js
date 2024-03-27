@@ -12,44 +12,18 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 const Contentbox = () => {
   return (
 
-
-    <div className="container">
-    <div className="item item-1">
-    
-        <div className='text'>
-        <p  >Join us from June 7th to the 9th 2024, to kick the summer off with the very first Something Moves Festival. We are still in the early stages, so this is just for you to get it in your diary nice and early!
-
-        We thought it was about time we did something with all the people we love. The idea is that everyone contributes in whatever way they can and want, whether that’s music, games, art, decorations or food. This is what we make of it; we want to pull together all you creative, crafty, funny, playful, practical people to create something magical. Fill out the form below to RSVP and let us know if you have something you would like to bring or have an idea that needs more people involved.
-
-        Tickets will go on sale soon! We'll send you the ticket link via email, so keep an eye out. </p>
-        </div>
-
-    </div>
-
-    
+<di>
   
-    <div className="item item-2">
-    <h2 className='tittle'><Link to="/home" style={{ textDecoration: 'none' }} >Home</Link></h2>
-    <h2 className='tittle'><Link to="/about" style={{ textDecoration: 'none' }}>About</Link></h2>
-    <h2 className='tittle'><Link to="/tickets" style={{ textDecoration: 'none' }}>Tickets</Link></h2>
-    <h2 className='tittle'><Link to="/getting_there" style={{ textDecoration: 'none' }}>Getting There</Link></h2>
+</di>
 
-    </div>
-
-    <div className="item item-3">
-    <p>Contact US</p>
-    <p>Email: Somethingmovesfestival@gmail.com</p>
-    <p>Instagram</p>
-
-    </div>
-  </div>
-  
    
-   
-    );
-  }
 
-export default  Contentbox;
+
+
+  );
+}
+
+export default Contentbox;
 
 
 

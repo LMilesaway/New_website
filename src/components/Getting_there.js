@@ -25,7 +25,7 @@ const Getting_there = () => {
           <Map />
           <div className="container about">
 
-            
+
             <div class="row row1">
               <div class="column2" style={{ fontSize: '1em' }}>
                 <h2 className='tittle'>By Train:</h2>
@@ -50,10 +50,10 @@ const Getting_there = () => {
                 <p>
                   Friends Cars - 01342 618082 </p>
 
-                  <h2 className='tittle'>Cycling:</h2>
+                <h2 className='tittle'>Cycling:</h2>
                 <p  >
-                The Forest Way is a beautiful cycling path that runs along an old railway track all the way from East Grinstead and directly through the farm. The ride is about 7 miles long. </p>
-              
+                  The Forest Way is a beautiful cycling path that runs along an old railway track all the way from East Grinstead and directly through the farm. The ride is about 7 miles long. </p>
+
               </div>
             </div>
 
@@ -64,12 +64,12 @@ const Getting_there = () => {
               <div class="column2" style={{ fontSize: '1em' }}>
                 <h2 className='tittle'>By Car:</h2>
                 <p  >
-                We have a very limited amount of parking and ask that you please do not arrive by car. If you absolutely need to please contact us asap. 
-The parking will also only be available from 17:30 Pm on Friday. So if you want to arrive early come by train 🙂
- </p>
-              
+                  We have a very limited amount of parking and ask that you please do not arrive by car. If you absolutely need to please contact us asap.
+                  The parking will also only be available from 17:30 Pm on Friday. So if you want to arrive early come by train 🙂
+                </p>
 
-                
+
+
               </div>
             </div>
 
