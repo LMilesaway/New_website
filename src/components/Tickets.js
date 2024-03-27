@@ -5,7 +5,7 @@ import Header from './Header';
 import Homelogo from './Homelogo';
 import Footer from './Footer';
 import Body from './Body';
-import background from './WebsiteBackGroundCopy.jpg'
+import background from '../images/WebsiteBackGroundCopy.jpg'
 import BurgerMenu from './BurgerMenu';
 import Contentbox from './Contentbox';
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Style.css';
-import logo from './Something_Moves_24.png';
+import logo from '../images/Something_Moves_24.png';
 import './App.css';
 import BurgerMenu from './BurgerMenu';
 

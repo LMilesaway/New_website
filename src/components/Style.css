@@ -16,7 +16,7 @@
     }
   
 .background-image{
-   background-image: url( './Something _moves_ 2.jpg');
+   background-image: url( '../images/Something _moves_ 2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -24,6 +24,8 @@
     padding: 0;
     background-attachment: fixed; 
 }
+
+
 
 
 .homelogo{
@@ -58,22 +60,18 @@
        align-Items: 'center';
        text-align: center;
        color: aliceblue;
-  font-size: clamp(50px, 8vw, 200px);
+  font-size: clamp(40px, 8vw, 200px);
 }
 
 
 .background-image{
-  background-image: url( './Something _moves_ 2.jpg');
+  background-image: url( '../images/Something _moves_ 2.jpg');
    background-size: cover;
    background-repeat: no-repeat;
    height: 140vh;
    margin: 0;
    padding: 0;
    background-attachment: fixed; 
-
-
-  
- 
 }
 
 
@@ -100,12 +98,15 @@
   align-items: center;
   gap: 1;
 
+  
 }
+
+
+
 
 .item {
   
   width: 100%;
-  Min-height: 150px;
  
   background-color: #c5b8fc;
   font-weight: 700;
@@ -113,7 +114,6 @@
   color: var(--clr-light);
   text-align: left;
   border: 10px solid var(--clr-accent);
-
   overflow-y: auto;
 }
 
@@ -128,11 +128,9 @@
   font-size: clamp(50%, 15vw, 90%);
 }
 
-.tittle{
 
-  text-align: center;
 
-}
+
 
 /* END OF BASE STYLES */
 
@@ -179,63 +177,558 @@ color: #120377;
 
 
 
-@media only screen and (max-width: 376px) {
-  .text {
-    margin-right: 20px;
+.aboutbg{
+  height: 300vh;
+}
+
+
+
+
+
+
+.white{
+  background-color: #ffffff;
+  font-weight: normal;
+}
+
+
+
+
+
+.smallp{
+height: 180px;
+}
+
+
+.largep{
+  height: 300px;
+}
+
+.xlargep{
+  height: 600px;
+}
+
+
+
+
+
+
+.map {
+  width: 100%;
+  min-height: 150px; /* "min-height" instead of "Min-height" */
+  align-self: center;
+  font-weight: 700;
+  font-size: 62%;
+  color: var(--clr-light);
+  text-align: left;
+  border-radius: 25px;
+  overflow-y: auto;
+  display: flex; /* Added display property */
+  justify-content: center; /* Horizontally center the map */
+  align-items: center; /* Vertically center the map */
+ 
+}
+
+.map iframe {
+  width: 80%; /* Adjust as needed */
+  max-width: 1200px; /* Set maximum width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 15px; /* Border radius for the iframe */
+}
+
+
+.tittle{
+
+  text-align: center;
+  font-size: 18px;
+
+}
+
+
+
+.infobox{
+
     width: 85%;
-    padding-left: 20px; 
-    font-size: 12px
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: top;
+   
+    gap: 1;
+}
+
+
+@media screen and (max-width: 600px) {
+  .infobox{
+    width: 100%;
+  
+    flex-direction: column; /* Ensure flex-direction is set to column */
+    align-items: center;
+    
+}
+}
+
+
+.infoimage{
+  margin: 14px;
+  max-width: 500px;
+  max-height: 100%; /* Restrict the image height to 100% of its container */
+  width: 100% - 30px; /* Adjust width with calc() function to consider margin */
+  background-color: #c5b8fc;
+  font-weight: 700;
+  font-size: 62%;
+  color: var(--clr-light);
+  text-align: left;
+  border: 10px solid var(--clr-accent);
+  border-radius: 10px;
+  display: flex; /* Use flexbox */
+  justify-content: top; /* Align horizontally to center */
+  align-items: center; /* Align vertically to center */
+
+}
+
+
+.infotext{
+  width: 100%;
+  min-height: 600px;
+  background-color: #c5b8fc;
+  font-weight: 700;
+  font-size: 62%;
+  color: var(--clr-light);
+  text-align: left;
+  border: 10px solid var(--clr-accent);
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .infobox{
+    width: 100%;
+    flex-direction: column; /* Ensure flex-direction is set to column */
+    height: 430;
+}
+}
+
+
+
+
+
+.abouttext{
+  margin-right: 15px;
+  width: 100%-80px;
+  height: 400px;
+  padding-left: 40px; 
+  font-size: 18px
+}
+
+.imagewrapper{
+  height:1000px
+}
+
+.about{
+  height: 2500px;
+}
+
+
+.fiveH{
+  height: 500px;
+  
+  }
+  
+  .fourH{
+    height: 400px;
+  }
+
+
+  @media only screen and (min-width: 200px) {
+    .text {
+      font-size: 13px;
+      padding-left: 20px; 
+      margin-right: 10px;
+    }
+    .background-image{
+       height: 160vh;
+    }
+    .item-1{
+      height: 650px;
+    }
+    .container {
+      height: 1000px;
+    }
+  
+    .about{
+      height: 3000px;
+    }
+    .aboutbg{
+      height: 360vh;
+    }
+    .imagewrapper{
+      height:300px
+    }
+    .infobox{
+      height: 300px;
+    }
+
+  }
+  
+  
+  @media only screen and (min-width: 300px) {
+    .text {
+      font-size: 13px;
+      padding-left: 20px; 
+    }
+    .background-image{
+       height: 160vh;
+    }
+    .item-1{
+      height: 450px;
+    }
+    .container {
+      height: 800px;
+    }
+
+    .about{
+      height: 3000px;
+    }
+    .aboutbg{
+      height: 360vh;
+    }
+    .imagewrapper{
+      height:800px
+    }
+    .imagewrapper{
+      height:300px
+    }
+    .infobox{
+      height: 300px;
+    }
+  }
+  
+  
+  @media only screen and (min-width: 400px) {
+    .text {
+      font-size: 13px
+      
+    }
+    .background-image{
+       height: 170vh;
+    }
+    .item-1{
+      height: 395px;
+    }
+  
+    .container {
+      height: 800px;
+    }
+    .about{
+      height: 3000px;
+    }
+    .aboutbg{
+      height: 360vh;
+    }
+    .imagewrapper{
+      height:250px
+    }
+    .infobox{
+      height: 300px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  @media only screen and (min-width: 450px) {
+    .text {
+      font-size: 13px
+    }
+    .background-image{
+       height: 160vh;
+    }
+    .item-1{
+      height: 350px;
+    }
+    .container {
+      height: 800px;
+    }
+    .about{
+      height: 3000px;
+    }
+    .aboutbg{
+      height: 360vh;
+    }
+    .imagewrapper{
+      height:250px
+    }
+    .infobox{
+      height: 300px;
+    }
+  }
+  
+  
+  
+  
+  @media only screen and (min-width: 500px) {
+    .text {
+      font-size: 15px
+    }
+    .background-image{
+       height: 160vh;
+    }
+    .item-1{
+      height: 350px;
+    }
+    .container {
+      height: 800px;
+    }
+    .about{
+      height: 3000px;
+    }
+    .aboutbg{
+      height: 360vh;
+    }
+    .imagewrapper{
+      height:250px
+    }
+    .infobox{
+      height: 300px;
+    }
+  }
+  
+  @media only screen and (min-width: 601px) {
+    .text {
+      font-size: 15px
+    }
+    .background-image{
+       height: 170vh;
+    }
+    .item-1{
+      height: 320px;
+    }
+    .about{
+      height: 3000px;
+    }
+    .aboutbg{
+      height: 360vh;
+    }
+    .imagewrapper{
+      height:250px
+    }
+    .infobox{
+      height: 300px;
+    }
+  }
+  
+
+
+  @media only screen and (min-width: 701px) {
+    .text {
+      font-size: 16px
+    }
+    .background-image{
+       height: 170vh;
+    }
+    .item-1{
+      height: 320px;
+    }
+
+    .aboutbg{
+      height: 360vh;
+    }
+    .infobox{
+      height: auto;
+    }
+    .infoimage{
+     max-width: 350px;
+    }
+
+    .infotext{
+      height: auto;
+      
+    }
+
+
+    
+.abouttext{
+  margin-right: 15px;
+  width: 100%-80px;
+  height: 200px;
+  padding-left: 40px; 
+  font-size: 18px
+}
+
+.imagewrapper{
+  height:auto;
+}
+
+.about{
+  height: 2500px;
+}
+
+  }
+
+
+
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+     box-sizing: border-box;
     
   }
-  .background-image{
-    background-image: url( './Something _moves_ 2.jpg');
-     background-size: cover;
-     background-repeat: no-repeat;
-     height: 170vh;
-     margin: 0;
-     padding: 0;
-     background-attachment: fixed; 
+
+
+  
+  .column2 {
+    float: left;
+    width: 100%;
+    padding: 5px;
+     box-sizing: border-box;
+    
   }
-  .item-1{
-    height: 300px;
+
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+     box-sizing: border-box;
   }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+ 
+ 
+  .column p {
+    font-size: 1em; /* Adjust the font size as needed */
+  }
+
+  .column h2{
+    font-size: 1.5em; /* Adjust the font size as needed */
+  }
+
+  @media screen and (min-width: 700px) {
+    .column p {
+      font-size: 1.2em; /* Adjust the font size as needed */
+    }
+
+    .column h2{
+      font-size: 2em; /* Adjust the font size as needed */
+    }
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .column p {
+      font-size: 2em; /* Adjust the font size as needed */
+    }
+
+    .column h2{
+      font-size: 2.5em; /* Adjust the font size as needed */
+    }
+  }
+
+
+  .about{
+    height: 2500px;
+
+  }
+
+  .row1{
+    background-color: #c5b8fc;
+  }
+
+  .row2{
+    background-color: #c5b8fc;
+  }
+
+
+
+  .gtbg{
+    height: 210vh;
+  }
+  
+  .gettingthere{
+    height: 140vh;
+  }
+
+
+
+@media only screen and (min-width: 701px) {
+
+.gtbg{
+  height: 200vh;
+}
+
+.gettingthere{
+  height: 160vh;
+}
 }
 
 
+@media only screen and (min-width: 601px) {
 
-@media only screen and (max-width: 501px) {
-  .text {
-    font-size: 15px
+  .gtbg{
+    height: 200vh;
   }
-  .background-image{
-     height: 170vh;
+  
+  .gettingthere{
+    height: 160vh;
   }
-  .item-1{
-    height: 350px;
   }
-}
 
-@media only screen and (max-width: 601px) {
-  .text {
-    font-size: 15px
-  }
-  .background-image{
-     height: 170vh;
-  }
-  .item-1{
-    height: 320px;
-  }
-}
+  @media only screen and (min-width: 501px) {
 
-@media only screen and (max-width: 701px) {
-  .text {
-    font-size: 16px
-  }
-  .background-image{
-     height: 170vh;
-  }
-  .item-1{
-    height: 320px;
-  }
-}
+    .gtbg{
+      height: 210vh;
+    }
+    
+    .gettingthere{
+      height: 190vh;
+    }
+    }
 
+    @media only screen and (min-width: 401px) {
+
+      .gtbg{
+        height: 210vh;
+      }
+      
+      .gettingthere{
+        height: 190vh;
+      }
+      }
+
+      @media only screen and (min-width: 301px) {
+
+        .gtbg{
+          height: 240vh;
+        }
+        
+        .gettingthere{
+          height: 200vh;
+        }
+        }
+
+
+      
+        @media only screen and (min-width: 900px) {
+
+          .gtbg{
+            height: 210vh;
+          }
+          
+          .gettingthere{
+            height: 140vh;
+          }
+          }
+        

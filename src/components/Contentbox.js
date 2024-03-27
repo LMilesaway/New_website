@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Style.css';
-import logo from './Logo_Square.png';
+import logo from '../images/Logo_Square.png';
 import './App.css';
 import BurgerMenu from './BurgerMenu';
 import Textbox from './Texbox';
@@ -15,7 +15,7 @@ const Contentbox = () => {
 
     <div className="container">
     <div className="item item-1">
-        <h2 className='tittle'>Title</h2>
+    
         <div className='text'>
         <p  >Join us from June 7th to the 9th 2024, to kick the summer off with the very first Something Moves Festival. We are still in the early stages, so this is just for you to get it in your diary nice and early!
 
